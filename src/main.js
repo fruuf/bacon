@@ -12,7 +12,7 @@ import routes from './routes';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // we want redux-thunk for async dispatching
-const enhancer = composeEnhancers(applyMiddleware(thunk));
+const enhancer = composeEnhancers(applyMiddleware());
 
 // create the redux store, use state from previous store if available
 const store = createStore(ducks, enhancer);
