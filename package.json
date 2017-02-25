@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "start": "pack -w",
+    "test": "eslint src && pack -rt",
+    "build": "rimraf www && pack && cordova build"
+  },
+  "dependencies": {
+    "cordova": "^6.5.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.3",
+    "react-router": "^3.0.2",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0",
+    "pack-cli": "^1.4.1",
+    "rimraf": "^2.6.1"
+  }
+}
