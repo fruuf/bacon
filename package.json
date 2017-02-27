@@ -2,10 +2,14 @@
   "scripts": {
     "start": "pack -w",
     "test": "eslint src && pack -rt",
-    "build": "rimraf www && pack && cordova build"
+    "build": "rimraf www && pack && cordova build",
+    "format": "gulp"
   },
   "dependencies": {
     "cordova": "^6.5.0",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11",
+    "prettier": "^0.19.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",

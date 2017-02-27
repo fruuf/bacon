@@ -12,16 +12,17 @@ import routes from './routes';
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 // we want redux-thunk for async dispatching
-const enhancer = composeEnhancers(applyMiddleware());
+const enhancer = composeEnhancers(applyMiddleware(thunk));
 
 // create the redux store, use state from previous store if available
 const store = createStore(ducks, enhancer);
 
 // render the app to the DOM
-const renderApp = root => render(
-  React.createElement(Provider, { store }, React.createElement(root)),
-  document.getElementById('render'),
-);
+const renderApp = root =>
+  render(
+    React.createElement(Provider, { store }, React.createElement(root)),
+    document.getElementById('render'),
+  );
 
 // do the initial render
 renderApp(routes);

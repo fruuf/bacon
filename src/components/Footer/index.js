@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import './style.css';
 
-
 const Footer = () => (
   <footer>
     <span>Item 1</span>
@@ -12,18 +11,15 @@ const Footer = () => (
   </footer>
 );
 
-
-/* 
+/*
 -- Task 1: nest components
 div.home
   div.header
   div.dashboard
   div.footer
-  
+
 -- Task 2:
 add an email field to the form and store
 */
 
-
-
-export default connect()(Footer)
+export default connect()(Footer);

@@ -1,12 +1,11 @@
 import React from 'react';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
-import Home from '/components/Home';
-
+import Dashboard from '/components/Dashboard';
 
 export default () => (
   <Router history={browserHistory}>
     <Route path="/">
-      <IndexRoute component={Home} />
+      <IndexRoute component={Dashboard} />
     </Route>
   </Router>
 );

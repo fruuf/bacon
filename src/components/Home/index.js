@@ -10,30 +10,27 @@ class Home extends Component {
   constructor() {
     super();
   }
-  
+
   render() {
     return (
-      <div> 
-        <Header/>
-        <Dashboard/>
-        <Footer/>
+      <div>
+        <Header />
+        <Dashboard />
+        <Footer />
       </div>
-      
-      );
+    );
   }
 }
 
-/* 
+/*
 -- Task 1: nest components
 div.home
   div.header
   div.dashboard
   div.footer
-  
+
 -- Task 2:
 add an email field to the form and store
 */
 
-
-
-export default connect()(Home)
+export default connect()(Home);
